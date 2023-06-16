@@ -1,0 +1,153 @@
+.wrapper {
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  .title {
+    text-align: center;
+    font-size: 50px;
+    color: #39383f;
+    font-family: "Bahnschrift", sans-serif;
+    line-height: 73px;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .selector {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 999;
+
+      .path {
+        fill: #19a281;
+        opacity: 0;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      .path:hover {
+        opacity: 2;
+        pointer-events: all;
+        transition: 0.5s;
+      }
+
+      .activePath {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: activeAnimation;
+        animation-timing-function: linear;
+      }
+
+      @keyframes activeAnimation {
+        0% { opacity: 0 }
+        50% { opacity: 1  }
+        100% { opacity: 0  }
+      }
+    }
+  }
+  .hint {
+    padding: 10px 20px;
+    background-color: #19a281;
+    color: white;
+    position: absolute;
+    z-index: 10000;
+    transition: top 0.3s;
+    opacity: 0;
+  }
+}
+
+.modal{
+  width: 100%;
+}
+
+.stageModal {
+  max-width: 100%;
+  max-height: 100vh;
+  top: 0;
+  overflow: scroll;
+
+  .selector {
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 999;
+
+      .path {
+        fill: #19a281;
+        opacity: 0;
+        transition: 0.5s;
+        cursor: pointer;
+      }
+
+      .path:hover {
+        opacity: 0.5;
+        pointer-events: all;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .selector {
+    display: none;
+  }
+  .wrapper {
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    .title{
+      color: white;
+    }
+  }
+  .plannigWrapper {
+    margin-top: 0;
+    background: black;
+    hr {
+      border: 2px solid #c8b552;
+      width: 100%;
+      max-width: 1234px;
+      height: auto;
+      margin-top: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .plannigWrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+  .wrapper{
+    padding: 50px 0 20px 0;
+  }
+  .title {
+    font-size: 32px !important;
+    padding-bottom: 0;
+  }
+}

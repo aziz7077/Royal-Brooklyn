@@ -1,0 +1,51 @@
+﻿{
+  "name": "Royal Construction",
+  "short_name": "Brooklyn",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffff",
+  "theme_color": "#ffff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "384x384"
+    },
+    {
+      "src": "/static/favicon.ico",
+      "type": "image/ico",
+      "sizes": "512x512"
+    }
+  ]
+}

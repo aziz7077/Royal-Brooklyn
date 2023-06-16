@@ -1,0 +1,13 @@
+.ant-modal-mask {
+	background-color: black !important;
+}
+
+.ant-modal-content{
+	background: black !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.ant-modal {
+	max-width: calc(100vw - 0px); 
+}

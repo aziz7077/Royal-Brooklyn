@@ -1,0 +1,511 @@
+.landscaping__slider {
+  height: 55vh;
+  width: 60%;
+  transition: 1.6s;
+  border-radius: 30px;
+}
+
+.landscaping__slider .swiper-slide {
+  border-radius: 11px !important;
+  height: 300px !important;
+  border-radius: 30px !important;
+  width: 250px !important;
+  transition: 0s;
+  opacity: 0.6;
+  visibility: hidden;
+}
+
+.landscaping__slider .swiper-slide img {
+  height: 100%;
+  width: 500px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  ) !important;
+  box-shadow: 0px 0px 20px #c8b552;
+  border-radius: 30px !important;
+}
+
+.landscaping__slider .swiper-slide-active {
+  width: 200px !important;
+  height: 82% !important;
+  transform: translate(-200px, 0) !important;
+  transition: 1.3s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.landscaping__slider .swiper-slide-active img {
+  width: 600px !important;
+  height: 100%;
+  border-radius: 30px !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+  box-shadow: 0px 0px 20px #c8b552;
+  transition: 1.1s;
+}
+
+.landscaping__slider .swiper-slide-prev {
+  z-index: -1;
+  border-radius: 11px !important;
+  transform: translate(5px, 20px) !important;
+  visibility: visible;
+  transition: 1s;
+}
+
+.landscaping__slider .swiper-slide-prev img {
+  transition: 1s;
+}
+
+.landscaping__slider .swiper-slide-next {
+  transform: translate(-250px, 20px) !important;
+  z-index: -1;
+  visibility: visible;
+  transition: 2s;
+}
+
+.landscaping__slider .swiper-slide-next img {
+  transition: 2s;
+}
+
+.landscaping__slider .swiper-button-prev,
+.landscaping__slider .swiper-button-next {
+  width: 43px;
+  height: 53px;
+  background: rgba(57, 56, 63, 0.8);
+  border-radius: 5px;
+  color: white !important;
+  top: 180px !important;
+}
+
+.landscaping__slider .swiper-button-prev {
+  left: 7px;
+}
+
+.landscaping__slider .swiper-button-next {
+  right: 7px;
+}
+
+.landscaping__slider .swiper-button-prev::after,
+.landscaping__slider .swiper-button-next::after {
+  font-size: 23px !important;
+}
+
+.landscaping__slider .swiper-pagination-bullet {
+  width: 23px !important;
+  height: 23px !important;
+  border: 1px solid black !important;
+  background-color: white !important;
+  transition: 0.4s;
+}
+
+.landscaping__slider .swiper-pagination-bullet-active {
+  background-color: #39383fcc !important;
+}
+
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .landscaping__slider {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .landscaping__slider .swiper-button-prev,
+  .landscaping__slider .swiper-button-next {
+    display: none;
+  }
+
+  .landscaping__slider .swiper-slide {
+    width: 100% !important;
+    height: 72% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 100%;
+    height: 72%;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    transform: translate(0) !important;
+  }
+  .landscaping__slider .swiper-slide-next {
+    transform: translate(0) !important;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 621px) {
+  .landscaping__slider {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .landscaping__slider .swiper-button-prev,
+  .landscaping__slider .swiper-button-next {
+    display: none;
+  }
+
+  .landscaping__slider .swiper-slide {
+    width: 100% !important;
+    height: 72% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 100%;
+    height: 72%;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    transform: translate(0) !important;
+  }
+  .landscaping__slider .swiper-slide-next {
+    transform: translate(0) !important;
+  }
+}
+
+@media screen and (min-width: 622px) and (max-width: 700px) {
+  .landscaping__slider {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .landscaping__slider .swiper-button-prev,
+  .landscaping__slider .swiper-button-next {
+    display: none;
+  }
+
+  .landscaping__slider .swiper-slide {
+    width: 100% !important;
+    height: 80% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 100%;
+    height: 80%;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    transform: translate(0) !important;
+  }
+  .landscaping__slider .swiper-slide-next {
+    transform: translate(0) !important;
+  }
+}
+
+@media screen and (min-width: 622px) and (max-width: 700px) {
+  .landscaping__slider {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .landscaping__slider .swiper-button-prev,
+  .landscaping__slider .swiper-button-next {
+    display: none;
+  }
+
+  .landscaping__slider .swiper-slide {
+    width: 100% !important;
+    height: 80% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 100% !important;
+    height: 80%;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    transform: translate(0) !important;
+  }
+  .landscaping__slider .swiper-slide-next {
+    transform: translate(0) !important;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 800px) {
+  .landscaping__slider {
+    height: 50vh;
+    width: 60%;
+  }
+  .landscaping__slider .swiper-slide {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    height: 100%;
+    width: 100% !important;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 100% !important;
+    height: 82% !important;
+    transform: translate(0, 0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next {
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-button-prev,
+  .landscaping__slider .swiper-button-next {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+  .landscaping__slider {
+    height: 50vh;
+    width: 60%;
+  }
+  .landscaping__slider .swiper-slide {
+    height: 70% !important;
+    width: 35% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    height: 100%;
+    width: 300px;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 20% !important;
+    height: 82% !important;
+    transform: translate(-145px, 0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 370px !important;
+    height: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    transform: translate(40px, 20px) !important;
+    width: 45% !important;
+  }
+
+  .landscaping__slider .swiper-slide-next {
+    transform: translate(-145px, 20px) !important;
+    width: 45% !important;
+  }
+
+  .landscaping__slider .swiper-button-prev {
+    left: 8% !important;
+  }
+
+  .landscaping__slider .swiper-button-next {
+    right: 0% !important;
+  }
+
+  .landscaping__slider .swiper-button-next,
+  .landscaping__slider .swiper-button-prev {
+    top: 40% !important;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1000px) {
+  .landscaping__slider {
+    height: 50vh;
+    width: 60%;
+  }
+  .landscaping__slider .swiper-slide {
+    height: 70% !important;
+    width: 35% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    height: 100%;
+    width: 300px;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 20% !important;
+    height: 82% !important;
+    transform: translate(-180px, 0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 450px !important;
+    height: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    width: 45% !important;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-prev img {
+    transform: translate(40px, 20px) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next {
+    width: 45% !important;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next img {
+    transform: translate(-121px, 20px) !important;
+  }
+
+  .landscaping__slider .swiper-button-prev {
+    top: 40% !important;
+    left: 8%;
+  }
+
+  .landscaping__slider .swiper-button-next {
+    top: 40% !important;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1114px) {
+  .landscaping__slider {
+    height: 50vh;
+    width: 60%;
+  }
+  .landscaping__slider .swiper-slide {
+    height: 70% !important;
+    width: 35% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    height: 100%;
+    width: 300px;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 20% !important;
+    height: 82% !important;
+    transform: translate(-180px, 0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 450px !important;
+    height: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    width: 45% !important;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-prev img {
+    transform: translate(40px, 20px) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next {
+    width: 45% !important;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next img {
+    transform: translate(-105px, 20px) !important;
+  }
+
+  .landscaping__slider .swiper-button-prev {
+    top: 40% !important;
+  }
+
+  .landscaping__slider .swiper-button-next {
+    top: 40% !important;
+  }
+}
+
+@media screen and (min-width: 1115px) and (max-width: 1204px) {
+  .landscaping__slider .swiper-slide {
+    height: 70% !important;
+    width: 35% !important;
+  }
+
+  .landscaping__slider .swiper-slide img {
+    height: 100%;
+    width: 300px;
+  }
+
+  .landscaping__slider .swiper-slide-active {
+    width: 20% !important;
+    height: 82% !important;
+    transform: translate(-240px, 0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-active img {
+    width: 560px !important;
+    height: 100%;
+  }
+
+  .landscaping__slider .swiper-slide-prev {
+    width: 45% !important;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-prev img {
+    transform: translate(20px, 20px) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next {
+    width: 45% !important;
+    transform: translate(0) !important;
+  }
+
+  .landscaping__slider .swiper-slide-next img {
+    transform: translate(-80px, 20px) !important;
+  }
+
+  .landscaping__slider .swiper-button-prev {
+    top: 40% !important;
+  }
+
+  .landscaping__slider .swiper-button-next {
+    top: 40% !important;
+  }
+}
+
+@media screen and (min-width: 1205px) and (max-width: 1440px) {
+  .landscaping__slider {
+    height: 63vh;
+  }
+  .landscaping__slider .swiper-button-next {
+    right: 17px;
+  }
+}

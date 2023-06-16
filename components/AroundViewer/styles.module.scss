@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 90%;
+  margin: 50px auto;
+  border-radius: 30px;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 20px #c8b552);
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-height: 600px;
+    max-width: 80%;
+    :global {
+      .psv-container {
+        max-height: 600px !important;
+      }
+    }
+  }
+}

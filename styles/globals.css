@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+a{
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+.blocks {
+  position: relative;
+}
+.liner {
+  top: -100px;
+  position: absolute;
+}
+/* 
+@font-face {
+  font-family: "Sweet Mavka Script";
+  src: local("Sweet Mavka Script"),
+    url("../public/Sweetmavkascript.woff2") format("woff2"),
+    url("../public/Sweetmavkascript.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: "Bahnschrift", sans-serif !important;
+  src: local("Bahnschrift"), url("../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat") url("../public/Montserrat-VariableFont_wght.ttf")
+    format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.no-scroll {
+  overflow: hidden;
+}

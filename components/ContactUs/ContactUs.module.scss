@@ -1,0 +1,94 @@
+.main {
+  src: local("Bahnschrift"),
+    url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
+  font-family: "Bahnschrift", sans-serif;
+  background-image: url("./../../assets/slideLandscapingTwo.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50vh;
+  position: relative;
+  color: #f0dd7d;
+  z-index: 1;
+  margin-top: 80px;
+  .background_opacity {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: -2;
+    opacity: 0.3;
+  }
+  .title {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 70px;
+    z-index: 2;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 60px;
+    height: 20vh;
+    .ellipse {
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #c8b552;
+      border-radius: 100%;
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s;
+      z-index: 2;
+      a {
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .ellipse:hover {
+      background-color: #f0dd7d;
+      transform: translateY(-20px);
+    }
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 522px) {
+  .main {
+    height: 90vh !important;
+    margin-top: 40px;
+    background-attachment: local;
+    .container {
+      padding: 0 20px 0 20px;
+    }
+    .title {
+      font-size: 15px;
+      padding-top: 30px;
+    }
+    .icons {
+      flex-direction: column;
+      gap: 0;
+      justify-content: space-between;
+      align-items: center;
+      height: 65vh;
+    }
+  }
+}
+
+@media screen and (min-width: 523px) and (max-width: 1100px) {
+  .main {
+    height: 55vh !important;
+    .container {
+      padding: 0 20px 0 20px;
+    }
+    .title {
+      font-size: 18px;
+    }
+  }
+}

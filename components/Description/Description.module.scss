@@ -1,0 +1,581 @@
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bahnschrift", sans-serif;
+  src: local("Bahnschrift"),
+    url("../../public/FontsFree-Net-BAHNSCHRIFT-1.ttf") format("ttf");
+
+  .main__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-image: url("../../assets/backgroundDescription.webp");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .main__background_opacity {
+    background-color: black;
+    position: absolute;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .main__blocks {
+    position: relative;
+    z-index: 1;
+    margin-top: 83px;
+    margin-bottom: 100px;
+    color: #f4f3e3;
+    height: 520px;
+    width: 520px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      font-size: 15px;
+      min-width: 205px;
+    }
+    nav,
+    aside {
+      position: absolute;
+      animation-duration: 0.5s;
+      animation-fill-mode: forwards;
+      display: flex;
+      gap: 13px;
+      align-items: center;
+      visibility: hidden;
+    }
+    aside {
+      text-align: end;
+      flex-direction: row-reverse;
+    }
+    .main__blocks__block:nth-child(2) {
+      animation-name: load1;
+    }
+    .main__blocks__block:nth-child(3) {
+      animation-name: load2;
+      animation-delay: 1s;
+    }
+    .main__blocks__block:nth-child(4) {
+      animation-name: load3;
+      animation-delay: 1.5s;
+    }
+    .main__blocks__block:nth-child(5) {
+      animation-name: load4;
+      animation-delay: 2s;
+    }
+    .main__blocks__block:nth-child(6) {
+      animation-name: load5;
+      animation-delay: 2.5s;
+    }
+    .main__blocks__block:nth-child(7) {
+      animation-name: load6;
+      animation-delay: 3s;
+    }
+    .main__blocks__block:nth-child(8) {
+      animation-name: load7;
+      animation-delay: 3.5s;
+    }
+    .main__blocks__block:nth-child(9) {
+      animation-name: load8;
+      animation-delay: 4s;
+    }
+    .main__blocks__block:nth-child(10) {
+      animation-name: load9;
+      animation-delay: 4.5s;
+    }
+    .main__blocks__block:nth-child(11) {
+      animation-name: load10;
+      animation-delay: 5s;
+    }
+  }
+}
+
+@keyframes load1 {
+  0% {
+    bottom: 45%;
+    left: 45%;
+    visibility: hidden;
+  }
+  100% {
+    bottom: 90%;
+    left: 60%;
+    visibility: visible;
+  }
+}
+
+@keyframes load2 {
+  50% {
+    bottom: 90%;
+    left: 60%;
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+    bottom: 70%;
+    left: 85%;
+  }
+}
+
+@keyframes load3 {
+  50% {
+    bottom: 70%;
+    left: 85%;
+    visibility: hidden;
+  }
+  100% {
+    bottom: 45%;
+    left: 95%;
+    visibility: visible;
+  }
+}
+
+@keyframes load4 {
+  50% {
+    bottom: 45%;
+    left: 95%;
+    visibility: hidden;
+  }
+  100% {
+    left: 85%;
+    bottom: 20%;
+    visibility: visible;
+  }
+}
+
+@keyframes load5 {
+  50% {
+    left: 85%;
+    bottom: 20%;
+    visibility: hidden;
+  }
+  100% {
+    left: 60%;
+    bottom: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes load6 {
+  50% {
+    right: 28%;
+    bottom: 0;
+    visibility: hidden;
+  }
+  100% {
+    right: 60%;
+    bottom: 0;
+    visibility: visible;
+  }
+}
+
+@keyframes load7 {
+  50% {
+    right: 60%;
+    bottom: 0;
+    visibility: hidden;
+  }
+  100% {
+    right: 85%;
+    bottom: 20%;
+    visibility: visible;
+  }
+}
+
+@keyframes load8 {
+  50% {
+    right: 85%;
+    bottom: 20%;
+    visibility: hidden;
+  }
+  100% {
+    bottom: 45%;
+    right: 95%;
+    visibility: visible;
+  }
+}
+
+@keyframes load9 {
+  50% {
+    bottom: 45%;
+    right: 95%;
+    visibility: hidden;
+  }
+  100% {
+    bottom: 70%;
+    right: 85%;
+    visibility: visible;
+  }
+}
+
+@keyframes load10 {
+  50% {
+    bottom: 70%;
+    right: 85%;
+    visibility: hidden;
+  }
+  100% {
+    bottom: 90%;
+    right: 60%;
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  .main {
+    height: 160vh;
+    justify-content: start !important;
+    align-items: start !important;
+    overflow: hidden !important;
+    background-image: url("../../assets/descriptionBackgroundTwo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -250px;
+    margin-top: 35px;
+    background-attachment: local;
+    .main__background {
+      height: 160vh;
+      width: 100%;
+      background-attachment: local;
+      img {
+        display: none;
+      }
+    }
+    .main__background_opacity {
+      height: 160vh !important;
+    }
+    .main__blocks {
+      margin-top: 0;
+      height: 100%;
+      margin-bottom: 0 !important;
+      overflow: hidden;
+      border-radius: 0;
+      position: static;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 40px 0 40px 0;
+      .main__blocks__block {
+        flex-direction: column;
+        text-align: center;
+        position: static;
+        width: 80%;
+      }
+    }
+  }
+  @keyframes load1 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load3 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load4 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load5 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load7 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load8 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load9 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load10 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 770px) {
+  .main {
+    height: 170vh;
+    justify-content: start !important;
+    align-items: start !important;
+    overflow: hidden !important;
+    background-image: url("../../assets/descriptionBackgroundTwo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -250px;
+    background-attachment: local;
+    .main__background {
+      height: 170vh;
+      width: 100%;
+      background-attachment: local;
+      img {
+        display: none;
+      }
+    }
+    .main__background_opacity {
+      height: 170vh !important;
+    }
+    .main__blocks {
+      margin-top: 0;
+      height: 100%;
+      width: 100%;
+      margin-bottom: 0 !important;
+      overflow: hidden;
+      border-radius: 0;
+      position: static;
+      align-items: start;
+      padding: 40px 20px 40px 20px;
+      flex-wrap: wrap;
+      .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .main__blocks__block {
+        flex-direction: column;
+        text-align: center;
+        position: static;
+        width: 50%;
+        h3 {
+          width: 50%;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  @keyframes load1 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load2 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load3 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load4 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load5 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load6 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load7 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load8 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load9 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+  @keyframes load10 {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (min-width: 771px) and (max-width: 1024px) {
+  .main {
+    overflow: hidden !important;
+    background-image: url("../../assets/descriptionBackgroundTwo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .main__background {
+      img {
+        display: none;
+      }
+    }
+
+    .main__blocks {
+      width: 50% !important;
+      height: 70% !important;
+      .main__blocks__block {
+        h3 {
+          min-width: 130px;
+          line-height: 20px;
+          font-size: 16px;
+          text-align: center;
+        }
+      }
+      .main__blocks__block:nth-child(7) {
+        h3 {
+          min-width: 230px !important;
+        }
+      }
+      .main__blocks__block:nth-child(11) {
+        h3 {
+          min-width: 230px !important;
+        }
+      }
+    }
+  }
+  @keyframes load1 {
+    0% {
+      bottom: 45%;
+      left: 45%;
+    }
+    100% {
+      bottom: 89%;
+      left: 60%;
+      visibility: visible;
+    }
+  }
+  @keyframes load6 {
+    50% {
+      right: 28%;
+      bottom: 0;
+    }
+    100% {
+      right: 60%;
+      bottom: 0;
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    .main__blocks {
+      .main__blocks__block:nth-child(8) {
+        display: none;
+      }
+      .main__blocks__block:nth-child(9) {
+        display: none;
+      }
+      .main__blocks__block:nth-child(10) {
+        display: none;
+      }
+      .main__blocks__block:nth-child(11) {
+        display: none;
+      }
+    }
+  }
+}
